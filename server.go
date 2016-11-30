@@ -11,6 +11,5 @@ func main() {
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello echo api")
 	})
-	//e.Logger.Fatal(e.Start(":1111"))
 	e.Start(":1111")
 }
